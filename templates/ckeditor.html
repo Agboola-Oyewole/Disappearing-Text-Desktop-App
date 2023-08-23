@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDos</title>
+    <!-- Bootstap scripts -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;800&family=Quicksand&display=swap" rel="stylesheet">
+<style>
+    .button-shape {
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+
+    }
+    body {
+      font-family: 'DM Serif Display', serif;
+      background-color: #FAF0E6;
+    }
+
+</style>
+
+
+</head>
+    <body>
+
+
+        <div class="container">
+            <header class="py-3 mb-3 border-bottom">
+                <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+                  <div class="dropdown">
+                    <a style=" color: #5C5470;" href="#" class="d-flex align-items-center col-lg-4 mt-2 mb-lg-0 link-body-emphasis text-decoration-none dropdown-toggle show" data-bs-toggle="dropdown" aria-expanded="true">
+                      <h1 style="font-family: 'DM Serif Display', serif; color: #5C5470;" >Writzer</h1>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 34px);">
+                      <li><a class="dropdown-item active" href="#" aria-current="page">Overview</a></li>
+                      <li><a class="dropdown-item" href="#">Inventory</a></li>
+                      <li><a class="dropdown-item" href="#">Customers</a></li>
+                      <li><a class="dropdown-item" href="#">Products</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Reports</a></li>
+                      <li><a class="dropdown-item" href="#">Analytics</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="d-flex justify-content-end">
+                    <ul class="nav nav-pills">
+                        <button type="button" class="button-shape btn nav-item me-2" data-bs-toggle="modal" data-bs-target="#exampleModalLogin">Login</button>
+
+
+
+
+
+
+                        <div class="modal fade" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div style="background-color: #FAF0E6;" class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <form class="mx-1 mx-md-4 mb-4" method="post">
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                      <div class="form-outline flex-fill mb-0">
+                                          <label class="form-label" for="form3Example3c">Your Email</label>
+                                        <input style="background-color: #F1F0E8;" required="required" name="email" placeholder="Email Address" type="email" id="form3Example3c" class="form-control" />
+
+                                      </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                      <div class="form-outline flex-fill mb-0">
+                                          <label class="form-label" for="form3Example4c">Password</label>
+                                        <input style="background-color: #F1F0E8;" required="required" name="password" placeholder="Input Password" type="password" id="form3Example4c" class="form-control" />
+
+                                      </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                      <button style="color: #FAF0E6; background-color: #5C5470;" type="submit" class="button-shape btn btn-md">Login</button>
+                                        <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+
+                                    </div>
+                                  <p style="padding-left: 17px;" class="small fw-bold mt-2 pt-1 mb-0">Don't have an account?  <a style="color: #5C5470;" href="#"
+                                  class=""> Register</a></p>
+
+
+
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+
+
+
+                        <button type="button" class="button-shape btn nav-item" style="color: #FAF0E6; background-color: #5C5470;" data-bs-toggle="modal" data-bs-target="#exampleModalRegister">Sign-up</button>
+
+
+
+
+                        <div class="modal fade" id="exampleModalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div style="background-color: #FAF0E6;" class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <form class="mx-1 mx-md-4 mb-4" method="post">
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                      <div class="form-outline flex-fill mb-0">
+                                        <label class="form-label" for="form3Example1c">Your Name</label>
+                                        <input style="background-color: #F1F0E8;" name="name" required="required" placeholder="John Doe" type="text" id="form3Example1c" class="form-control" />
+
+                                      </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                                      <div class="form-outline flex-fill mb-0">
+                                        <label class="form-label" for="form3Example3c">Your Email</label>
+                                        <input style="background-color: #F1F0E8;" name="email" required="required" placeholder="Email Address" type="email" id="form3Example3c" class="form-control" />
+
+                                      </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                      <div class="form-outline flex-fill mb-0">
+                                        <label class="form-label" for="form3Example4c">Password</label>
+                                        <input style="background-color: #F1F0E8;" name="password" required="required" placeholder="Input Password" type="password" id="form3Example4c" class="form-control" />
+
+                                      </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                      <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                                      <div class="form-outline flex-fill mb-0">
+                                        <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                                        <input style="background-color: #F1F0E8;" required="required" name="repeat" placeholder="Repeat Password" type="password" id="form3Example4cd" class="form-control" />
+
+                                      </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-4">
+                                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                      <button style="color: #FAF0E6; background-color: #5C5470;" type="submit" class="button-shape btn btn-md">Register</button>
+                                    </div>
+
+                                  </form>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+                    </ul>
+
+                    </div>
+
+
+
+                    <!-- <div class="flex-shrink-0 dropdown">
+                      <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                      </a>
+                      <ul class="dropdown-menu text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                      </ul>
+                    </div> -->
+                  </div>
+                </div>
+              </header>
+
+
+              <div class="px-4 pt-3 my-5 text-center border-bottom">
+                <h2 style="color: #5C5470;" class="display-4 fw-bold text-body-emphasis">Writzer</h2>
+                <div class="col-lg-6 mx-auto">
+                  <p class="lead mb-2"> Get Your Writing Done, Faster!</p>
+                  <p class="lead mb-4">The text-editor app made to make your lives much easier, and excitement to use it for your future projects.</p>
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <button style="color: #FAF0E6; background-color: #5C5470;" type="button" class="button-shape btn btn-lg px-4 me-sm-3">Get started for free</button>
+
+                  </div>
+                </div>
+                <div class="overflow-hidden" style="max-height: 40vh;">
+                  <div class="container px-5">
+                    <img src="https://text2photo.com/themes/custom/text2photo/images/photo-editor/add-text-to-photo.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+
+
+
+        <div class="container px-5">
+            <div class="container">
+                <footer class="py-5">
+
+
+
+
+
+                    <div class="">
+                      <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                          <label for="newsletter1" class="visually-hidden">Email address</label>
+                          <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                          <button class="button-shape btn" style="color: #FAF0E6; background-color: #5C5470;" type="button">Subscribe</button>
+                        </div>
+                      </form>
+                    </div>
+
+
+                  <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+                    <p>© 2023 Company, Inc. All rights reserved.</p>
+                    <ul class="list-unstyled d-flex">
+                      <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                      <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                      <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                    </ul>
+                  </div>
+                </footer>
+              </div>
+        </div>
+
+
+
+
+    </body>
+
+</html>
